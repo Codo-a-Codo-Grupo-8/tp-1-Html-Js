@@ -43,7 +43,7 @@ footer {
 
 .formulario-container {
     flex-grow: 1;
-    background-image: url('../Imagenes/departamento.jpg');
+    background-image: url('../imagenes/departamento.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

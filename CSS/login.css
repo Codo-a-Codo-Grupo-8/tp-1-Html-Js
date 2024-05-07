@@ -1,7 +1,7 @@
 /* Estilos LOGIN */
 .container-fluid {
     flex-grow: 1;
-    background-image: url('../Imagenes/Carrousel3.jpg');
+    background-image: url('../imagenes/Carrousel3.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
