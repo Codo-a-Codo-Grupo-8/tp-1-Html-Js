@@ -62,7 +62,7 @@ body {
 }
 .contenedor-info{
     flex-grow: 1;
-    background-image: url(/Carrousel1.jpg);
+    background-image: url(/carrousel1.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
