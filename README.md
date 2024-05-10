@@ -21,7 +21,7 @@
   
 </div>
 <div align="center">
-  <a href="https://codo-a-codo-grupo-8.github.io/tp-1-html-js/">Deploy</a>
+  <a href="https://codo-a-codo-grupo-8.github.io/tp-1-html-js/"><h2>Deploy</h2></a>
 <div>
 <div align="left">
   <ul><h2>Integrantes</h2>
