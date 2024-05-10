@@ -15,7 +15,7 @@ body {
     padding: 0;
 }
 
-header, footer {
+.header, footer {
     background: rgb(122, 119, 23);
     color: white;
     text-align: center;
@@ -76,6 +76,7 @@ header, footer {
 .formulario input[type="email"],
 .formulario button[type="submit"] {
     width: 100%; /* Ocupar todo el ancho disponible */
+    border-radius: 10px;
 }
 
 
