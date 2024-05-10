@@ -20,9 +20,11 @@
  </ul>
   
 </div>
+
 <div align="center">
   <h2><a href="https://codo-a-codo-grupo-8.github.io/tp-1-html-js/">Deploy</a></h2></div>
 <div>
+  
 <div align="left">
   <ul><h2>Integrantes</h2>
     <li> Daniel Spinela</li>
