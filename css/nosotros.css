@@ -1,58 +1,61 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    
-  }
-  
-  .navbar {
+
+}
+
+.navbar {
     background-color: #010101;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-  }
-  
-  .navbar-logo img {
-    height: 40px; 
-  }
-  
-  .navbar-menu {
+}
+
+.navbar-logo img {
+    height: 40px;
+}
+
+.navbar-menu {
     list-style-type: none;
     display: flex;
-    justify-content:end;
+    justify-content: end;
     margin: 0;
     padding: 0;
-  }
-  
-  .navbar-menu li {
+}
+
+.navbar-menu li {
     margin-left: 20px;
-  }
-  
-  .navbar-menu li:first-child {
+}
+
+.navbar-menu li:first-child {
     margin-left: 0;
-  }
-  
-  .navbar-menu li a {
+}
+
+.navbar-menu li a {
     color: white;
     font-size: 15px;
     text-decoration: none;
-  }
-  
+}
 
-.Texto-mover{
+
+.Texto-mover {
     animation: mover-izquierda-derecha 45s infinite;
     animation-fill-mode: forwards;
     font-size: 18px;
 }
-@keyframes mover-izquierda-derecha{
-    from{
+
+@keyframes mover-izquierda-derecha {
+    from {
         transform: translateX(-90%);
     }
-    to{
+
+    to {
         transform: translateX(90%);
     }
 }
+
 .caja {
     height: 100%;
     display: flex;
@@ -60,16 +63,18 @@ body {
     margin: 0;
     padding: 0;
 }
-.contenedor-info{
+
+.contenedor-info {
     flex-grow: 1;
-    background-image: url(/carrousel1.jpg);
+    background-image: url('../imagenes/carrousel1.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.info{
+
+.info {
     background-color: #000000e6;
     border-radius: 15px;
     color: white;
@@ -78,12 +83,13 @@ body {
     max-width: 700px;
     width: 100%;
 }
-.info a{
+
+.info a {
     color: white;
     font-weight: bold;
 }
 
-.info iframe{
+.info iframe {
     min-width: 100%;
 }
 
@@ -92,7 +98,7 @@ body {
 .footer-principal {
     background: #000000;
     color: white;
-    padding: 20px 5px; 
+    padding: 20px 5px;
     font-size: 12px;
 }
 
@@ -105,7 +111,7 @@ body {
 
 .footer-principal [class*="icon-"]:before {
     position: relative;
-    top: 3px; 
+    top: 3px;
     right: 5px;
 }
 
@@ -117,11 +123,12 @@ body {
 .columna-flex-footer {
     flex: 1;
     padding: 20px;
-   /*border-right: 1px solid #ccc;*/
+    /*border-right: 1px solid #ccc;*/
 }
 
 .columna-flex-footer:last-child {
-    border-right: none; /* Elimina el borde en la última columna */
+    border-right: none;
+    /* Elimina el borde en la última columna */
 }
 
 .titulo-columna {
@@ -136,20 +143,25 @@ body {
 .icon-facebook,
 .icon-twitter,
 .icon-instagram {
-    text-decoration: none; /* Quita la subrayado de los enlaces */
-    color: #333; /* Color del texto */
+    text-decoration: none;
+    /* Quita la subrayado de los enlaces */
+    color: #333;
+    /* Color del texto */
 }
 
 .icon-facebook:hover,
 .icon-twitter:hover,
 .icon-instagram:hover {
-    color: #4267B2; /* Color del texto al pasar el ratón */
+    color: #4267B2;
+    /* Color del texto al pasar el ratón */
 }
-.copy{
+
+.copy {
     margin-top: 10px;
     text-align: center;
 }
-.btn-wsp{
+
+.btn-wsp {
     position: fixed;
     width: 55px;
     height: 55px;
@@ -164,11 +176,13 @@ body {
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
 }
-.btn-wsp:hover{
+
+.btn-wsp:hover {
     text-decoration: none;
-    color:#0df053;
+    color: #0df053;
     background: #fff;
 }
+
 /* label #btn-nav,
 label #cancel{
     color: #ffffff;
@@ -185,7 +199,7 @@ label #cancel{
 } */
 
 @media (max-width: 860px) {
-    .navbar-menu{
+    .navbar-menu {
         display: flex;
         flex-direction: column;
         /* justify-content: flex-end; */
@@ -197,10 +211,11 @@ label #cancel{
         width: 100vw;
         overflow: hidden;
     }
-    #btn-nav{
+
+    #btn-nav {
         display: block;
         color: #0df053;
     }
-    
+
 
 }
