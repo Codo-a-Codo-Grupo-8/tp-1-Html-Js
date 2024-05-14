@@ -9,14 +9,14 @@
     align-items: center;
 }
 
-.formulario-container {
+/* .formulario-container {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     color: rgb(254, 254, 254);
     padding: 10px 10px 10px 25px;
     max-width: 40%;
     width: 100%;
-}
+} */
 
 .titulo-formulario {
     text-align: center;
