@@ -1,48 +1,5 @@
-body,
-html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
 
-.container-fluid {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: -20px 0px 0px 0px;
-    padding: 0;
-}
 
-header,
-footer {
-    background: rgb(122, 119, 23);
-    color: white;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar-menu {
-    list-style-type: none;
-    /*padding: 10px 20px 0px 0px;*/
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: end;
-}
-
-.navbar-menu li {
-    margin-left: 20px;
-}
-
-.navbar-menu li:first-child {
-    margin-left: 0px;
-}
-
-.navbar-menu li a {
-    color: white;
-    text-decoration: none;
-}
 
 .grid-card-casas {
     justify-content: center;

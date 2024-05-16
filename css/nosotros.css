@@ -1,8 +1,9 @@
-body {
+body, html {
+    height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
-
+    padding: 0;
 }
+
 
 .navbar {
     background-color: #010101;
@@ -10,7 +11,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    margin-top: -15px;
 }
 
 .navbar-logo img {
@@ -21,8 +22,8 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: end;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .navbar-menu li {
@@ -59,18 +60,23 @@ body {
 .caja {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    margin: 0;
+    flex-direction:column;
+    margin-top: -20px;
+   
+   
     padding: 0;
 }
 
 .contenedor-info {
-    flex-grow: 1;
+    flex-grow:1;
     background-image: url('../imagenes/carrousel1.jpg');
-    background-size: cover;
+    background-size:cover;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+    margin: 0;
+    
+    
 
 }
 
@@ -82,6 +88,8 @@ body {
     padding: 30px;
     max-width: 700px;
     width: 100%;
+    padding: 20px;
+    margin-top: 10px;
 }
 
 .info a {
@@ -202,20 +210,20 @@ label #cancel{
     .navbar-menu {
         display: flex;
         flex-direction: column;
-        /* justify-content: flex-end; */
-        height: 0px;
-        /* position: absolute; */
-        /* top: 80px; */
+        min-height: 100px; /* Ajusta este valor según sea necesario */
         left: 20px;
         right: 0;
         width: 100vw;
         overflow: hidden;
+        border-bottom: 1px solid transparent;
     }
 
     #btn-nav {
         display: block;
         color: #0df053;
     }
-
-
 }
+
+
+
+

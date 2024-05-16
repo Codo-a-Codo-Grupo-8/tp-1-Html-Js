@@ -5,41 +5,28 @@ body, html {
     padding: 0;
 }
 
-.container-fluid {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: -20px 0px 0px 0px;
-    padding: 0;
-}
-
-header, footer {
-    background: rgb(122, 119, 23);
-    color: white;
-    text-align: center;
-    padding:0;
-    margin: 0;
-}
 
 .navbar {
-    width: 100%;
-    background-color: #000000;
+    background-color: #010101;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    flex-wrap: wrap;
-    font-size: 12px;
+    margin-top: -10px;
+   
+}
+
+.navbar-logo img {
+    height: 40px;
 }
 
 .navbar-menu {
     list-style-type: none;
-    /*padding: 10px 20px 0px 0px;*/
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: end;
+    margin: 10px;
+    padding: 10px;
+   
 }
 
 .navbar-menu li {
@@ -47,14 +34,14 @@ header, footer {
 }
 
 .navbar-menu li:first-child {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .navbar-menu li a {
     color: white;
+    font-size: 15px;
     text-decoration: none;
 }
-
 .body-gral {
     font-family: Arial, sans-serif;
     width: 100%;
@@ -71,27 +58,11 @@ header, footer {
         max-width: 15%;
     }
 }
-
-.navbar-menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: end;
-    margin: 0;
-    padding: 0;
+.texto {
+    background-color: black;
+    color:white;
 }
 
-.navbar-menu li {
-    margin-left: 20px;
-}
-
-.navbar-menu li:first-child {
-    margin-left: 0;
-}
-
-.navbar-menu li a {
-    color: white;
-    text-decoration: none;
-}
 
 .Texto-mover {
     animation: mover-izquierda-derecha 45s infinite;
@@ -112,6 +83,7 @@ header, footer {
 .banner {
     /* margin: -20px -20px 0px -20px; */
     position: relative;
+    margin-top:-20px;
 }
 
 .banner:before {
@@ -292,18 +264,18 @@ header, footer {
 
 /* Estilos para el TEXTO */
 .titulo-texto {
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin: 50px;
+    margin: 5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .titulo-texto-secundario {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 /* Estilos para PROCESO */
@@ -314,35 +286,45 @@ header, footer {
 }
 
 .proceso {
-    box-shadow: 0 4px 8px 0 rgba(3, 0, 0, 0.614);
+    box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.614);
     /* max-width: 95%; */
-    margin: 30px;
+    background: #E4DADA;
+    margin: 10px;
     text-align: center;
     font-family: arial;
-    height: 100%;
-    padding: 30px 30px 30px 30px;
-    background-color: rgba(0, 0, 0, 0.2);
+    height: 25%;
+    padding: 10px 10px 10px 10px;
+   
 }
 
 .proceso-card {
-    padding: 30px 30px 30px 30px;
+    padding: 10px 10px 10px 10px;
     margin: 10px;
 }
 
 .acceso {
-    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.614);
+    /* max-width: 95%; */
+    background: #E4DADA;
+    margin: 10px;
+    text-align: center;
+    font-family: arial;
+    height: 270%;
+    padding: 10px;
+    
 }
 
 .acceso-grid {
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 25% 25% 25% 25%;
     font-size: 16px;
     margin: 0% 10% 10% 10%;
 }
 
 .acceso-grid-card {
-    padding: 10% 10% 10% 10%;
+    
+    padding: 15px;
 
 }
 
