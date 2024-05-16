@@ -264,18 +264,18 @@ body, html {
 
 /* Estilos para el TEXTO */
 .titulo-texto {
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin: 50px;
+    margin: 5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .titulo-texto-secundario {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 /* Estilos para PROCESO */
@@ -289,16 +289,16 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.614);
     /* max-width: 95%; */
     background: #E4DADA;
-    margin: 30px;
+    margin: 10px;
     text-align: center;
     font-family: arial;
-    height: 100%;
-    padding: 30px 30px 30px 30px;
+    height: 25%;
+    padding: 10px 10px 10px 10px;
    
 }
 
 .proceso-card {
-    padding: 30px 30px 30px 30px;
+    padding: 10px 10px 10px 10px;
     margin: 10px;
 }
 
@@ -306,23 +306,25 @@ body, html {
     box-shadow: 0 4px 8px 0 rgba(12, 12, 12, 0.614);
     /* max-width: 95%; */
     background: #E4DADA;
-    margin: 30px;
+    margin: 10px;
     text-align: center;
     font-family: arial;
-    height: 100%;
-    padding: 30px 30px 30px 30px;
+    height: 270%;
+    padding: 10px;
+    
 }
 
 .acceso-grid {
     justify-content: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 25% 25% 25% 25%;
     font-size: 16px;
     margin: 0% 10% 10% 10%;
 }
 
 .acceso-grid-card {
-    padding: 10% 10% 10% 10%;
+    
+    padding: 15px;
 
 }
 
