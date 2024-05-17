@@ -67,26 +67,21 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .caja {
         width: 100%;
     }
     .info{
+        background-color: #000000c4;
        border-radius: 5px;
        font-size: 10px;
        max-width: 600px;
-       width: 100%;
+       width: 80%;
 
     }
     .info iframe {
         max-width: 502px;
         width: 100%;
     }
-    .btn-wsp{
-        float: left;
-    }
+    
 }
-
-
-
-
