@@ -2,28 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userLogin = document.getElementById('user');
     const passLogin = document.getElementById('pass');
     const btnLogin = document.getElementById('btnLogin');
-    const formLogin = document.getElementById('formLogin');
-    const cerrarDialog = document.getElementById('cerrarDialog');
     const dialogAlerta = document.getElementById('alertaDialog');
-    const alertaMsg = document.getElementById('alertaMsg');
-    let errorMsg = false;
-    // btnLogin.addEventListener('click', (event) => {
-    //     event.preventDefault();
-    //     event.stopPropagation();
-    //     console.log('btn');
-    // })
-    // userLogin.addEventListener('blur', () => {
-    //     console.log("user");
-    //     verifyInput(userLogin, 'Complete Usuario');
-    // });
-
-    // passLogin.addEventListener('blur', () => {
-    //     verifyInput(passLogin, "Debe ingresar Password");
-    // });
-    // cerrarDialog.addEventListener('click', () => {
-    //     dialogAlerta.close();
-    // });
-
     btnLogin.addEventListener('click', (event) => {
         event.preventDefault();
         event.stopPropagation();
