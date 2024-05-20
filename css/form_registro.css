@@ -9,17 +9,18 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
 
-.header, footer {
+.header,
+footer {
     background: rgb(122, 119, 23);
     color: white;
     text-align: center;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 .formulario-container {
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,12 +52,12 @@ body {
 .formulario {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    color: black; 
+    color: black;
     padding: 30px;
     max-width: 400px;
     width: 100%;
     text-align: center;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-weight: bold;
     font-size: 10px;
 }
@@ -67,18 +68,29 @@ body {
 
 .formulario label {
     font-size: 18px;
-    color: rgb(249, 249, 249); /* Cambiar el color del label a negro */
+    color: rgb(249, 249, 249);
+    /* Cambiar el color del label a negro */
 }
 
 .formulario input[type="text"],
 .formulario input[type="password"],
 .formulario input[type="date"],
 .formulario input[type="email"],
-.formulario button[type="submit"] {
-    width: 100%; /* Ocupar todo el ancho disponible */
+.formulario button[type="submit"],
+.formulario input[type="file"],
+.formulario select {
+    width: 100%;
+    /* Ocupar todo el ancho disponible */
     border-radius: 10px;
+    overflow: hidden;
 }
 
+#documento-foto {
+    /* color: white; */
+    background-color: white;
+
+
+}
 
 .formulario button[type="submit"] {
     background-color: #007bff;
@@ -104,11 +116,13 @@ body {
     flex: 1;
     text-align: left;
 }
+
 #tit-formulario {
-    color:white
+    color: white
 }
+
 @media screen and (max-width: 768px) {
     .formulario {
-        max-width: none; 
+        max-width: none;
     }
 }
