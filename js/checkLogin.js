@@ -7,25 +7,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const dialogAlerta = document.getElementById('alertaDialog');
     const alertaMsg = document.getElementById('alertaMsg');
     let errorMsg = false;
-    userLogin.addEventListener('blur', () => {
-        console.log("user");
-        verifyInput(userLogin, 'Complete Usuario');
-    });
+    // btnLogin.addEventListener('click', (event) => {
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    //     console.log('btn');
+    // })
+    // userLogin.addEventListener('blur', () => {
+    //     console.log("user");
+    //     verifyInput(userLogin, 'Complete Usuario');
+    // });
 
-    passLogin.addEventListener('blur', () => {
-        verifyInput(passLogin, "Debe ingresar Password");
-    });
-    cerrarDialog.addEventListener('click', () => {
-        dialogAlerta.close();
-    });
+    // passLogin.addEventListener('blur', () => {
+    //     verifyInput(passLogin, "Debe ingresar Password");
+    // });
+    // cerrarDialog.addEventListener('click', () => {
+    //     dialogAlerta.close();
+    // });
 
     btnLogin.addEventListener('click', (event) => {
         event.preventDefault();
-        if (passLogin.value !== "" && userLogin.value !== "") {
-            console.log("Formulario válido, se puede enviar");
-            formLogin.submit();
+        event.stopPropagation();
+        if (passLogin.value == "" || userLogin.value == "") {
+            if (userLogin.value == "") {
+                alert("El usuario no tiene datos.");
+                return false;
+            }
+            if (passLogin.value == "") {
+                alert("El password no tiene datos.");
+                return false;
+
+            }
         } else {
-            console.log("Alguno de los campos está vacío, no se envía el formulario");
+            alert("SE ENVIO FORMULARIO.");
+            window.location.href = '/';
+            return true;
         }
     });
     const verifyInput = (element, msg = null) => {
