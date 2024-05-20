@@ -65,6 +65,19 @@
                         <input type="date" name="fecha-de-nacimiento" id="fecha-de-nacimiento" required>
                         <label for="correo">Ingrese Email</label>
                         <input type="email" name="correo" id="correo" required>
+                        
+                        <!-- New input for uploading a document photo -->
+                        <label for="documento-foto">Foto del Documento:</label>
+                        <input type="file" name="documento-foto" id="documento-foto" accept="image/*" required>
+                        
+                        <!-- New input for choosing between compra or venta -->
+                        <label for="transaccion">Tipo de Transacción:</label>
+                        <select name="transaccion" id="transaccion" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="compra">Compra</option>
+                            <option value="venta">Venta</option>
+                        </select>
+
                         <button class="form-buttons" type="submit">REGISTRAR</button>
                     </form>
                 </div>
