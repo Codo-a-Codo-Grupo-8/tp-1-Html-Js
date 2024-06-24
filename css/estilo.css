@@ -12,7 +12,10 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
   }
-
+ .tablaapi{
+    background-color: black;
+    color:white
+ }
   .navbar {
       background-color: #010101;
       color: white;
