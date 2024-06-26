@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>REALESTATE</title>
+</head>
+<body>
+    <header>
+        <nav>      
+          <div class="" style="background: rgb(122, 119, 23);">
+            <div class="_items" style="left: 0%;">
+              <p class="Texto-mover" style="text-decoration:none; color: white;">
+                Todos podemos ser propietarios de un pedacito.
+              </p>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <img src="./imagenes/logo1.PNG" alt="Logo">
+          </div>
+          <ul class="navbar-menu">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./oportunidades.html">Oportunidades</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+          <ul class="navbar-menu">
+            <li><a href="./registro.html">Crear cuenta</a></li>
+            <li><a href="./login.html">Iniciar sesión</a></li>
+          </ul>
+        </nav>
+        <button id="mostrarViviendas">Mostrar Viviendas en Venta</button>
+        <table id="viviendasTable"class="table table-dark">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Calle</th>
+                    <th>Ciudad</th>
+                    <th>Provincia</th>
+                    <th>Precio</th>
+                    <th>Metros cuadrados</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+     <footer class="footer-principal">
+        <div class="contenedor contenedor-flex">
+            <div class="columna columna-flex-footer">
+                <h2 class="titulo-columna"><img src="imagenes/logotipo-imobiliario_74869-184.avif" alt="" width="150px;"></h2>
+                <p class="desc-columna"></p>
+            </div>
+            <div class="columna columna-flex-footer">
+                <h2 class="titulo-columna">Contáctanos</h2>
+                <p class="desc-columna">Plazuela 10, 39700 CANTABRIA</p>
+                <p class="desc-columna">1163542345</p>
+                <p class="desc-columna">info@texasinmuebles.com</p>
+            </div>
+            <div class="columna columna-flex-footer">
+                <h2 class="titulo-columna">Enlaces útiles</h2>
+                <p class="desc-columna">Aviso Legal</p>
+                <p class="desc-columna">Politica de Privacidad</p>
+                <p class="desc-columna">Politica de Cookies</p>
+            </div>
+            <div class="columna columna-flex-footer">
+                <h2 class="titulo-columna">Nuestras Redes</h2>
+                <p class="desc-columna">Seguinos en Instagram</p>
+                <p class="desc-columna">Seguinos en Facebook</p>
+                <p class="desc-columna">Seguinos en Linkedin</p>
+            </div>
+        </div>
+        <div class="copy"><i class="far fa-copyright"></i> Copyright - 2021</div>
+    </footer> 
+    
+    <script>        
+        document.getElementById('mostrarViviendas').addEventListener('click', function() {
+            fetch('https://danielprg.alwaysdata.net/viviendas')
+                .then(response => {
+                    try {
+                    if (!response.ok){
+
+                        throw new Error(response.statusText);
+                    }}
+                    catch (error){
+                        console.log(error)
+                    }
+                    return response.json();
+                    
+                    
+                })
+                
+                .then(data => {
+                    const tableBody = document.querySelector('#viviendasTable tbody');
+                    tableBody.innerHTML = '';
+
+                    data.forEach(vivienda => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${vivienda.idvivienda}</td>
+                            <td>${vivienda.calle}</td>
+                            <td>${vivienda.ciudad}</td>
+                            <td>${vivienda.provincia}</td>
+                            <td>${vivienda.valorm2}</td>
+                            <td>${vivienda.mcuadrados}</td>
+                        `;
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+</body>
+</html>
+
+   
+ 
