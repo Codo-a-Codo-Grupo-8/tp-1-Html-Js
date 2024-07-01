@@ -81,7 +81,7 @@
    
     <script>        
         document.getElementById('mostrarViviendas').addEventListener('click', function() {
-            fetch('http://localhost:3000/viviendas')
+            fetch('https://danielprg.alwaysdata.net/viviendas')
                 .then(response => {
                     try {
                     if (!response.ok){
@@ -109,7 +109,7 @@
                             <td>${vivienda.provincia}</td>
                             <td>${vivienda.valorm2}</td>
                             <td>${vivienda.mcuadrados}</td>
-                            <td> <img src="http://localhost:3000/uploads/${vivienda.imagen}" width="100" alt=""></td>
+                            <td> <img src="https://danielprg.alwaysdata.net/uploads/${vivienda.imagen}" width="100" alt=""></td>
 
                         `;
                         tableBody.appendChild(row);
