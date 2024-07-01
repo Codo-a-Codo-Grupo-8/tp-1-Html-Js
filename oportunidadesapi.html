@@ -34,7 +34,7 @@
             <li><a href="./login.html">Iniciar sesión</a></li>
           </ul>
         </nav>
-        <button id="mostrarViviendas">Mostrar Viviendas en Venta</button>
+        <button id="mostrarViviendas" type="button"  class="btn btn-secondary btn-lg" >Mostrar Viviendas en Venta</button>
         <table id="viviendasTable"class="table table-dark">
             <thead>
                 <tr>
@@ -44,6 +44,7 @@
                     <th>Provincia</th>
                     <th>Precio</th>
                     <th>Metros cuadrados</th>
+                    <th>Imagen</th>
                 </tr>
             </thead>
             <tbody>
@@ -77,10 +78,10 @@
         </div>
         <div class="copy"><i class="far fa-copyright"></i> Copyright - 2021</div>
     </footer> 
-    
+   
     <script>        
         document.getElementById('mostrarViviendas').addEventListener('click', function() {
-            fetch('https://danielprg.alwaysdata.net/viviendas')
+            fetch('http://localhost:3000/viviendas')
                 .then(response => {
                     try {
                     if (!response.ok){
@@ -108,6 +109,8 @@
                             <td>${vivienda.provincia}</td>
                             <td>${vivienda.valorm2}</td>
                             <td>${vivienda.mcuadrados}</td>
+                            <td> <img src="http://localhost:3000/uploads/${vivienda.imagen}" width="100" alt=""></td>
+
                         `;
                         tableBody.appendChild(row);
                     });
